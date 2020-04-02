@@ -1,0 +1,23 @@
+<div class="container">
+  <div style="margin: 16px 250px">
+  <h1>Edit flat</h1>
+    <form action="" class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" value=<%= @flat.name %>><br>
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" class="form-control" value=<%= @flat.address %>><br>
+      <label for="description">Description</label>
+      <textarea class="form-control" rows = "2" cols = "60" name = "description" value=<%= @flat.description %>></textarea><br>
+      <label for="price_per_night">Price per night (Euro)</label>
+      <input type="text" id="price_per_night" name="price_per_night" class="form-control" value=<%= @flat.price_per_night %>><br>
+      <label for="number_of_guests">Number of guests</label>
+      <input type="text" id="number_of_guests" name="number_of_guests" class="form-control" value=<%= @flat.number_of_guests %>><br>
+      <input type="submit" value="Create flat" class="btn btn-primary">
+    </form>
+  <%= link_to 'Back', flats_path %>
+  </div>
+
+
+</div>
+<br>
+<br>
